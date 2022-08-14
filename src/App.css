@@ -1,0 +1,14 @@
+*{
+
+}
+body{
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid red;*/
+}
+.display-none{
+    display: none;
+}
+.homebody{
+    width: 100%;
+}
