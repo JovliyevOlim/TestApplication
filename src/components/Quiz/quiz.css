@@ -34,6 +34,13 @@
     color: #fff;
 }
 .correct{
-    background-color: #b42626;
+    background-color: green;
     color: #fff;
+}
+.incorrect{
+    background-color: red;
+    color: #fff;
+}
+.white{
+    background-color: white;
 }

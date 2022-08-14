@@ -10,7 +10,7 @@ function Quiz({numId,title}) {
     useEffect(()=>{
         setpages(numId)
         axios({
-            baseURL: 'https://opentdb.com/api.php?amount=' + numId+ '&category='+title,
+            baseURL: 'https://opentdb.com/api.php?amount=' + numId+ '&category='+title + "&type=multiple",
             method: "get"
         }).then(res => {
             setData(res.data.results)
@@ -31,8 +31,8 @@ function Quiz({numId,title}) {
         data.map(item=>{
                 item.incorrect_answers.push(item.correct_answer);
                 item.incorrect_answers.sort(()=>Math.random()-0.5)
+                item.difficulty=' '
             }
-
         );
         let a =[...data]
         setData2(a)
@@ -81,18 +81,43 @@ function Quiz({numId,title}) {
             }
         })
     }
+    function changeradio(e,question){
+        console.log(e.target.value)
+        data2.map(item=>{
+            if (item.question === question){
+                console.log('chis')
+                item.difficulty = e.target.value
+            }
+        })
+        let  a = [...data2]
+        setData2(a)
+    }
 
     function exit(){
         setModal(!modal)
     }
 
+    function finishtest(){
+        let a = 0
+        data2.map(item=>{
+            data.map(val=>{
+                if(item.difficulty===val.correct_answer){
+                     a++
+                }
+            })
+        })
+
+        alert(a/numId*100)
+    }
+
     return (
         <div className={'container'}>
+            {console.log(data2)}
+
             <div className="row">
                 <div className="navbar">
                     <h3>FINAL EXAM</h3>
-                    {console.log(data)}
-                    <button className={'btn btn-danger'}>FINISH</button>
+                    <button onClick={finishtest} className={'btn btn-danger'}>FINISH</button>
                 </div>
 
                 <div className="row">
@@ -122,8 +147,8 @@ function Quiz({numId,title}) {
                             <div className="card-body ">
                                 {
                                     item.incorrect_answers.map(val=>
-                                        <div className={'answers'}>
-                                            <input type="radio" value={val} onChange={(e)=>setradioValue(e.target.value)} id={val} name={'radio'} />
+                                        <div className={}>
+                                            <input type="radio" value={val}     checked={item.difficulty === " " ? false : item.difficulty !== val ? false : true} onChange={e=>changeradio(e,item.question)} id={val} name={'radio'} />
                                             <label className={'answers'} htmlFor={val}>{val}</label>
 
                                         </div>
