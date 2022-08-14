@@ -1,0 +1,39 @@
+.answers{
+    cursor: pointer;
+    margin-left: 5px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    border-bottom: 2px solid red;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+.pagination{
+    margin-bottom: 1rem;
+    margin-left: 10%;
+}
+.paginationItem{
+    width: 100px;
+    background-color: #eadada;
+    color: darkred;
+    border: none;
+    transition: all  0.2s linear;
+    margin: 0.5px;
+}
+.paginationItem:hover{
+    transform: scale(1.2);
+    border-bottom: 2px solid red;
+}
+.activePage{
+    background-color: #b42626;
+    transform: scale(1.1);
+    color: #fff;
+}
+.correct{
+    background-color: #b42626;
+    color: #fff;
+}
