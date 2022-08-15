@@ -14,15 +14,24 @@
 }
 .pagination{
     margin-bottom: 1rem;
-    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .paginationItem{
-    width: 100px;
+    width: 40px;
+    height: 40px;
     background-color: #eadada;
     color: darkred;
     border: none;
     transition: all  0.2s linear;
     margin: 0.5px;
+}
+@media (max-width: 500px) {
+  .paginationItem{
+      width: 35px;
+      height: 35px;
+  }
 }
 .paginationItem:hover{
     transform: scale(1.2);
@@ -34,6 +43,17 @@
     color: #fff;
 }
 .correct{
-    background-color: #b42626;
+    background-color: green;
     color: #fff;
+}
+.incorrect{
+    background-color: red;
+    color: #fff;
+}
+.white{
+    background-color: white;
+}
+.checked{
+    background-color: blue !important;
+    color:#fff;
 }

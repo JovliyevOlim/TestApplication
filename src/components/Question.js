@@ -45,7 +45,7 @@ function Question({sendAxios}) {
                     </div>
                 </div>
 
-                <div className="col-md-6 offset-3">
+                <div className="col-md-6 offset-md-3">
                     <label htmlFor="question">Number of questions</label>
                     <select value={numId} onChange={(e)=>setnumId(e.target.value)} className={'form-control'} id={'question'}>
                         {

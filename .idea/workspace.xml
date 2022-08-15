@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8497bd7-8fba-466c-9f82-974d2bbdfbba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/User.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/User.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/User.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Quiz/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Quiz/Quiz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Quiz/quiz.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Quiz/quiz.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
@@ -45,6 +43,7 @@
     "last_opened_file_path": "E:/Projects/EVASET OFFICE",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "D:\\WebStorm 2022.1.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -94,7 +93,12 @@
       <workItem from="1642497197315" duration="11978000" />
       <workItem from="1642522029225" duration="2163000" />
       <workItem from="1642563216420" duration="27406000" />
+<<<<<<< HEAD
       <workItem from="1660455923057" duration="23284000" />
+=======
+      <workItem from="1660455923057" duration="22038000" />
+      <workItem from="1660482842506" duration="3695000" />
+>>>>>>> 19df9a955066791441df0fe472f0d5924813cea3
     </task>
     <servers />
   </component>
